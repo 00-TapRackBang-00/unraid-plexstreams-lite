@@ -2,7 +2,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "plexstreams-lite">
 <!ENTITY author    "guycobb2">
-<!ENTITY version   "2026.03.11">
+<!ENTITY version   "2026.03.16">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/guycobb2/unraid-plexstreams-lite/main/plexstreams-lite.plg">
 <!ENTITY pkgURL    "https://github.com/guycobb2/unraid-plexstreams-lite/releases/download/&version;">
 <!ENTITY plgPATH   "/boot/config/plugins/&name;">
@@ -10,11 +10,25 @@
 
 <PLUGIN name="&name;" author="&author;" version="&version;"
         pluginURL="&pluginURL;"
+        launch="Settings/PlexStreams"
         min="6.11.9"
         icon="film"
         support="https://github.com/guycobb2/unraid-plexstreams-lite">
 
 <CHANGES>
+###2026.03.16
+- Poster Art layout: 4-column artwork card grid with gradient text overlays
+- Simple List layout: compact full-width text rows (original style)
+- Dashboard Layout selector in Settings (Poster Art / Simple List)
+- Header bandwidth stats: total Mbps + Direct Play / Transcoding breakdown
+- Overflow indicator: gold pill badge when more than 4 streams active
+- Text marquee scrolling for long titles and names
+- Separated TV show title from episode info (show name / S##E## · episode)
+- Music: artist as title, track · album as subtitle
+- HTTPS image proxy (img.php) for artwork — fixes mixed content on myunraid.net
+- Username and client device shown separately on each card
+- All text has drop shadow for readability on any artwork color
+
 ###2026.03.11
 - Initial release: Plex active streams dashboard widget
 - Shows title, user, device, transcode detail, bandwidth, progress bar
@@ -28,7 +42,7 @@
 -->
 <FILE Name="&plgPATH;/&name;.txz" Run="upgradepkg --install-new">
 <URL>&pkgURL;/&name;.txz</URL>
-<MD5>dff7bc4fd3f66e2cccc0b9002697ee5d</MD5>
+<MD5>3a5de6a21630c8ed0efa38d61809ccc9</MD5>
 </FILE>
 
 <FILE Run="/bin/bash" Method="remove">
