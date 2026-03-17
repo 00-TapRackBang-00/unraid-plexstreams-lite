@@ -23,7 +23,7 @@ An Unraid dashboard widget that displays active Plex streams in the left column 
 Paste this URL into **Plugins → Install Plugin** in the Unraid UI:
 
 ```
-https://raw.githubusercontent.com/guycobb2/unraid-plexstreams-lite/main/plexstreams-lite.plg
+https://raw.githubusercontent.com/00-TapRackBang-00/unraid-plexstreams-lite/main/plexstreams-lite.plg
 ```
 
 ## Configuration
