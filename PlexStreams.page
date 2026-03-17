@@ -40,12 +40,20 @@ $layout = $cfg['LAYOUT'] ?? 'poster';
 #psl-cfg .layout-preview .pr-cards { display:flex; gap:3px; height:50px; }
 #psl-cfg .layout-preview .pr-card  { flex:1; border-radius:3px; background:#2a2a2a; }
 #psl-cfg .layout-opt span { font-size:11px; color:#aaa; }
+.psl-brand { display:flex; align-items:center; gap:16px; margin-bottom:24px; border-bottom:1px solid #2a2a2a; padding-bottom:20px; }
+.psl-brand img { width:56px; height:56px; border-radius:12px; flex-shrink:0; }
+.psl-brand-title { font-size:18px; font-weight:bold; color:#e5a00d; line-height:1.3; }
+.psl-brand-sub { font-size:12px; color:#666; margin-top:3px; }
 </style>
 
 <div id="psl-cfg">
-    <p style="color:#aaa; margin-bottom:20px;">
-        Configure the connection to your Plex Media Server. The dashboard widget uses these settings to display active streams.
-    </p>
+    <div class="psl-brand">
+        <img src="/plugins/plexstreams-lite/images/icon.svg" alt="Plex Streams Lite">
+        <div>
+            <div class="psl-brand-title">Plex Streams Lite</div>
+            <div class="psl-brand-sub">Active stream monitoring for your Unraid dashboard</div>
+        </div>
+    </div>
 
     <div id="psl-notice" class="notice"></div>
 
