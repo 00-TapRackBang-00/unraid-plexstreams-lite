@@ -12,5 +12,5 @@ Displays active Plex streams on the Unraid dashboard with poster art, bandwidth,
 </Description>
 <Date>2026-03-19</Date>
 <Support>https://forums.unraid.net/topic/197813-plugin-plexstreams-lite/</Support>
-<Icon>https://raw.githubusercontent.com/00-TapRackBang-00/unraid-plexstreams-lite/main/plexstreams-lite/images/icon-dashboard.svg</Icon>
+<Icon>https://raw.githubusercontent.com/00-TapRackBang-00/unraid-plexstreams-lite/main/plexstreams-lite/images/icon.png</Icon>
 </Containers>
